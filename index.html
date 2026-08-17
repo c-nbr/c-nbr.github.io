@@ -1,0 +1,2561 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculoro – Cálculos Judiciais Trabalhistas e Cíveis | Assessoria Contábil Especializada</title>
+    <meta name="description" content="Soluções contábeis precisas para cálculos trabalhistas, cíveis e bancários. Atendimento ágil em até 24h, com equipe especializada. Fale conosco e garanta a segurança do seu processo." />
+    <meta name="keywords" content="cálculos judiciais, cálculos trabalhistas, assessoria contábil, perícia contábil, impugnação de cálculos, liquidação de sentença, advogados, PJe-Calc" />
+    <meta name="author" content="Calculoro" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Calculoro – Cálculos Judiciais Trabalhistas e Cíveis" />
+    <meta property="og:description" content="Soluções contábeis precisas com agilidade. Atendimento em até 24h para advogados e empresas. Conte com nossa equipe especializada." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.calculoro.com.br/" />
+    <meta property="og:image" content="https://www.calculoro.com.br/logo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Calculoro – Cálculos Judiciais Trabalhistas e Cíveis" />
+    <meta name="twitter:description" content="Soluções contábeis precisas com agilidade. Atendimento em até 24h para advogados e empresas." />
+    <meta name="twitter:image" content="https://www.calculoro.com.br/logo.png" />
+    <link rel="canonical" href="https://www.calculoro.com.br/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        :root {
+            --primary: #0b1a2e;
+            --primary-light: #1e2f44;
+            --accent: #2563eb;
+            --accent-dark: #1d4ed8;
+            --accent-light: #dbeafe;
+            --secondary: #7c3aed;
+            --secondary-light: #ede9fe;
+            --tertiary: #0891b2;
+            --tertiary-light: #cffafe;
+            --text: #0f172a;
+            --text-secondary: #475569;
+            --bg: #f1f5f9;
+            --white: #ffffff;
+            --border: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+            --shadow-hover: 0 12px 30px -8px rgba(37, 99, 235, 0.15), 0 4px 12px rgba(0, 0, 0, 0.02);
+            --radius: 20px;
+            --radius-sm: 12px;
+            --transition: all 0.3s ease;
+            --font: 'Inter', system-ui, -apple-system, sans-serif;
+            --header-top-offset: 0px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            padding-top: var(--header-top-offset);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--accent);
+            background: var(--accent-light);
+            padding: 0.25rem 1.2rem;
+            border-radius: 60px;
+            margin-bottom: 0.5rem;
+            border: 1px solid rgba(37, 99, 235, 0.08);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--primary);
+            line-height: 1.15;
+        }
+
+        .section-sub {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin: 0.4rem auto 2.5rem;
+            line-height: 1.7;
+        }
+
+        .has-aviso {
+            padding-bottom: 1rem;
+        }
+        .has-aviso+section {
+            padding-top: 2rem;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: var(--accent);
+            color: var(--white);
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 0.7rem 2rem;
+            border-radius: 60px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+        }
+        .btn-primary:hover {
+            background: var(--accent-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.15);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: transparent;
+            color: var(--white);
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 0.7rem 2rem;
+            border-radius: 60px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            cursor: pointer;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 0.7rem 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(11, 26, 46, 0.82);
+            backdrop-filter: blur(18px) saturate(180%);
+            -webkit-backdrop-filter: blur(18px) saturate(180%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            transition: var(--transition);
+        }
+        header.scrolled {
+            background: rgba(11, 26, 46, 0.92);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            height: 40px;
+        }
+        .logo img {
+            height: 40px;
+            width: auto;
+            display: block;
+            filter: brightness(0) invert(1);
+            transition: var(--transition);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            position: relative;
+        }
+        nav a:hover {
+            color: #ffffff;
+        }
+        .btn-nav {
+            background: #ffffff;
+            color: var(--primary) !important;
+            padding: 0.4rem 1.6rem;
+            border-radius: 60px;
+            font-weight: 600;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            transition: var(--transition);
+        }
+        .btn-nav:hover {
+            background: #f0f4f8 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.2rem;
+            z-index: 1001;
+        }
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #ffffff;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(11, 26, 46, 0.96);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            z-index: 999;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.8rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+            padding: 2rem;
+        }
+        .mobile-menu.open {
+            display: flex;
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .mobile-menu a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 0.3rem 1.2rem;
+            border-radius: 12px;
+        }
+        .mobile-menu a:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.06);
+        }
+        .mobile-menu .btn-nav-mobile {
+            background: #ffffff;
+            color: var(--primary) !important;
+            padding: 0.8rem 2.8rem;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+        .mobile-menu .btn-nav-mobile:hover {
+            background: #f0f4f8 !important;
+            transform: translateY(-2px);
+        }
+
+        .hero {
+            background: var(--primary);
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 7rem 2rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 70% 30%, rgba(37, 99, 235, 0.06) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 780px;
+        }
+        .hero .tag {
+            background: rgba(255, 255, 255, 0.06);
+            color: rgba(255, 255, 255, 0.7);
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+        .hero h1 {
+            font-size: 3.8rem;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.05;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+        }
+        .hero h1 span {
+            color: #60a5fa;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 560px;
+            margin: 0 auto 2.2rem;
+            line-height: 1.7;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-bird {
+            display: none;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+            background: linear-gradient(145deg, #ffffff 0%, #fcfdff 100%);
+            border-radius: var(--radius);
+            padding: 0;
+            box-shadow: 0 12px 40px -12px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.02);
+            margin-top: -3rem;
+            position: relative;
+            z-index: 3;
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2.8rem 1.8rem;
+            transition: var(--transition);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid var(--border);
+        }
+        .stat-item:last-child {
+            border-right: none;
+        }
+        .stat-item:hover {
+            transform: translateY(-4px);
+            background: rgba(37, 99, 235, 0.02);
+        }
+
+        .stat-item .stat-icon {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 0.6rem;
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+        .stat-item:hover .stat-icon {
+            opacity: 1;
+            transform: scale(1.05);
+            color: var(--accent-dark);
+        }
+
+        .stat-item .stat-figure {
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.02em;
+            min-height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font);
+            line-height: 1.1;
+        }
+
+        .stat-item p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin: 0.2rem 0 0;
+            font-weight: 400;
+            max-width: 220px;
+            line-height: 1.5;
+        }
+
+        .stat-item.arara-card {
+            background: linear-gradient(145deg, #fafcff, #ffffff);
+            border-radius: 0;
+            padding: 2.2rem 1.8rem;
+            border-right: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+        .stat-item.arara-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 30%, rgba(37, 99, 235, 0.02) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .stat-item.arara-card:hover {
+            background: linear-gradient(145deg, #f2f6ff, #ffffff);
+            border-color: var(--accent-light);
+        }
+
+        .stat-item.arara-card .arara-img {
+            height: 100px;
+            width: auto;
+            display: block;
+            margin: 0 auto 0.4rem;
+            filter: drop-shadow(0 4px 12px rgba(37, 99, 235, 0.12));
+            animation: floatArara 4s ease-in-out infinite;
+            position: relative;
+            z-index: 2;
+        }
+        @keyframes floatArara {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0); }
+        }
+        .stat-item.arara-card:hover .arara-img {
+            animation-duration: 2.5s;
+            filter: drop-shadow(0 8px 20px rgba(37, 99, 235, 0.2));
+        }
+
+        .stat-item.arara-card p {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 1.05rem;
+            margin: 0.2rem 0 0;
+            letter-spacing: 0.01em;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stat-item.arara-card .sub-destaque {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            margin-top: 0.1rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.7;
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 0;
+                padding: 0;
+                border-radius: var(--radius);
+                margin-top: -2rem;
+            }
+            .stat-item {
+                padding: 2rem 1.5rem;
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+            }
+            .stat-item:last-child {
+                border-bottom: none;
+            }
+            .stat-item.arara-card {
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+            }
+            .stat-item .stat-figure {
+                font-size: 2.6rem;
+                min-height: 3.2rem;
+            }
+            .stat-item.arara-card .arara-img {
+                height: 80px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stat-item .stat-figure {
+                font-size: 2.2rem;
+                min-height: 2.8rem;
+            }
+            .stat-item.arara-card .arara-img {
+                height: 70px;
+            }
+            .stat-item.arara-card p {
+                font-size: 0.95rem;
+            }
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .section-header .header-icon {
+            flex-shrink: 0;
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            color: var(--white);
+            background: var(--accent);
+            transition: var(--transition);
+        }
+        .section-header:hover .header-icon {
+            transform: rotate(-2deg) scale(1.02);
+        }
+        .section-header .header-text h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin: 0;
+        }
+        .section-header .header-text p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin: 0.2rem 0 0;
+            max-width: 600px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .service-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 2rem 1.8rem;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            cursor: default;
+        }
+        .service-card:nth-child(1) .icon-wrap {
+            background: var(--accent-light);
+            color: var(--accent);
+        }
+        .service-card:nth-child(2) .icon-wrap {
+            background: var(--secondary-light);
+            color: var(--secondary);
+        }
+        .service-card:nth-child(3) .icon-wrap {
+            background: var(--tertiary-light);
+            color: var(--tertiary);
+        }
+
+        .service-card:nth-child(1):hover .icon-wrap {
+            background: var(--accent);
+            color: var(--white);
+        }
+        .service-card:nth-child(2):hover .icon-wrap {
+            background: var(--secondary);
+            color: var(--white);
+        }
+        .service-card:nth-child(3):hover .icon-wrap {
+            background: var(--tertiary);
+            color: var(--white);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), #60a5fa, var(--accent));
+            background-size: 200% 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .service-card:nth-child(2)::before {
+            background: linear-gradient(90deg, var(--secondary), #a78bfa, var(--secondary));
+        }
+        .service-card:nth-child(3)::before {
+            background: linear-gradient(90deg, var(--tertiary), #67e8f9, var(--tertiary));
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+            animation: shimmer 2.8s infinite;
+        }
+        @keyframes shimmer {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 200% 0%;
+            }
+        }
+
+        .service-card:hover {
+            border-color: var(--accent);
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-6px);
+        }
+        .service-card:nth-child(2):hover {
+            border-color: var(--secondary);
+        }
+        .service-card:nth-child(3):hover {
+            border-color: var(--tertiary);
+        }
+
+        .service-card .icon-wrap {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            margin-bottom: 1.2rem;
+            transition: var(--transition);
+            position: relative;
+        }
+        .service-card:hover .icon-wrap {
+            transform: scale(1.05) rotate(-2deg);
+            box-shadow: 0 8px 20px -6px rgba(37, 99, 235, 0.2);
+        }
+        .service-card:nth-child(2):hover .icon-wrap {
+            box-shadow: 0 8px 20px -6px rgba(124, 58, 237, 0.2);
+        }
+        .service-card:nth-child(3):hover .icon-wrap {
+            box-shadow: 0 8px 20px -6px rgba(8, 145, 178, 0.2);
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+        .service-card p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .prev-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+        .prev-card {
+            background: var(--white);
+            padding: 1.4rem 1.6rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            cursor: default;
+            position: relative;
+        }
+        .prev-card::after {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: var(--radius-sm);
+            padding: 2px;
+            background: linear-gradient(135deg, transparent 40%, var(--accent), transparent 60%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .prev-card:hover::after {
+            opacity: 1;
+        }
+
+        .prev-card:hover {
+            border-color: transparent;
+            box-shadow: 0 8px 24px -6px rgba(37, 99, 235, 0.08);
+            transform: translateY(-4px);
+        }
+
+        .prev-card .icon-circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+            transition: var(--transition);
+            position: relative;
+        }
+        .prev-card:nth-child(1) .icon-circle {
+            background: var(--accent-light);
+            color: var(--accent);
+        }
+        .prev-card:nth-child(2) .icon-circle {
+            background: #fce7f3;
+            color: #db2777;
+        }
+        .prev-card:nth-child(3) .icon-circle {
+            background: #d1fae5;
+            color: #059669;
+        }
+        .prev-card:nth-child(4) .icon-circle {
+            background: #fef3c7;
+            color: #d97706;
+        }
+        .prev-card:nth-child(5) .icon-circle {
+            background: #e0e7ff;
+            color: #4f46e5;
+        }
+        .prev-card:nth-child(6) .icon-circle {
+            background: #cffafe;
+            color: #0891b2;
+        }
+
+        .prev-card:nth-child(1):hover .icon-circle {
+            background: var(--accent);
+            color: var(--white);
+        }
+        .prev-card:nth-child(2):hover .icon-circle {
+            background: #db2777;
+            color: var(--white);
+        }
+        .prev-card:nth-child(3):hover .icon-circle {
+            background: #059669;
+            color: var(--white);
+        }
+        .prev-card:nth-child(4):hover .icon-circle {
+            background: #d97706;
+            color: var(--white);
+        }
+        .prev-card:nth-child(5):hover .icon-circle {
+            background: #4f46e5;
+            color: var(--white);
+        }
+        .prev-card:nth-child(6):hover .icon-circle {
+            background: #0891b2;
+            color: var(--white);
+        }
+
+        .prev-card .prev-text {
+            flex: 1;
+        }
+        .prev-card h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.1rem;
+        }
+        .prev-card p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin: 0;
+            line-height: 1.4;
+        }
+        .prev-card .badge-icon {
+            display: inline-block;
+            font-size: 0.6rem;
+            font-weight: 600;
+            color: var(--accent);
+            background: var(--accent-light);
+            padding: 0.1rem 0.8rem;
+            border-radius: 60px;
+            margin-top: 0.2rem;
+        }
+
+        .missao-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8faff 100%);
+            border-radius: var(--radius);
+            border: 1px solid rgba(37, 99, 235, 0.15);
+            box-shadow: 0 12px 40px -12px rgba(37, 99, 235, 0.12), 0 4px 16px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .missao-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), #60a5fa, var(--accent));
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite;
+        }
+
+        .missao-card:hover {
+            box-shadow: 0 20px 60px -16px rgba(37, 99, 235, 0.2), 0 6px 20px rgba(0, 0, 0, 0.02);
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .missao-card .about-inner {
+            gap: 0;
+        }
+
+        .missao-card .about-image {
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: floatImage 8s ease-in-out infinite;
+        }
+        .missao-card .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+        .missao-card:hover .about-image {
+            animation: none;
+            transform: translateY(-6px);
+        }
+        .missao-card:hover .about-image img {
+            transform: scale(1.02);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+            border-color: var(--accent);
+        }
+
+        .missao-card .about-text {
+            padding: 2.8rem 3.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .missao-card .missao-titulo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+        }
+
+        .missao-card .missao-titulo .icon-gradient {
+            width: 52px;
+            height: 52px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, var(--accent), #60a5fa);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.4rem;
+            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.2);
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+
+        .missao-card:hover .missao-titulo .icon-gradient {
+            transform: rotate(-4deg) scale(1.04);
+            box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+        }
+
+        .missao-card .missao-desc {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin: 0.2rem 0 0.6rem;
+        }
+
+        .missao-card .missao-desc strong {
+            color: var(--primary);
+        }
+
+        .missao-card .missao-footer {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+            margin-top: 0.8rem;
+        }
+
+        .missao-card .missao-selo {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #ecfdf5;
+            color: #059669;
+            font-weight: 600;
+            font-size: 0.8rem;
+            padding: 0.3rem 1.2rem;
+            border-radius: 60px;
+            border: 1px solid rgba(5, 150, 105, 0.15);
+        }
+
+        .missao-card .missao-selo i {
+            font-size: 0.9rem;
+        }
+
+        .missao-card .missao-selo.secundario {
+            background: #fef3c7;
+            color: #d97706;
+            border-color: rgba(217, 119, 6, 0.15);
+        }
+
+        @media (min-width: 992px) {
+            .missao-card .about-inner {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+            }
+            .missao-card .about-inner.right {
+                flex-direction: row-reverse;
+            }
+            .missao-card .about-image {
+                flex: 0 0 42%;
+                max-width: 42%;
+                padding: 0 1rem;
+                animation: none;
+                transform: none;
+            }
+            .missao-card .about-image img {
+                width: 100%;
+                height: auto;
+                max-height: 320px;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+            .missao-card .about-text {
+                flex: 1;
+                padding: 2.5rem 1.5rem 2.5rem 0;
+            }
+            .missao-card .about-inner.right .about-text {
+                padding: 2.5rem 0 2.5rem 1.5rem;
+            }
+            .missao-card:hover .about-image {
+                transform: translateY(-4px);
+            }
+            .missao-card:hover .about-image img {
+                transform: scale(1.02);
+            }
+        }
+
+        @media (max-width: 991px) {
+            .missao-card .about-inner {
+                flex-direction: column;
+            }
+            .missao-card .about-image {
+                padding: 1.5rem 1.5rem 0.5rem;
+            }
+            .missao-card .about-image img {
+                max-height: 220px;
+                border-radius: 16px;
+            }
+            .missao-card .about-text {
+                padding: 1.5rem 2rem 2rem;
+            }
+            .missao-card .missao-titulo {
+                font-size: 1.4rem;
+            }
+            .missao-card .missao-titulo .icon-gradient {
+                width: 44px;
+                height: 44px;
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .missao-card .about-text {
+                padding: 1.2rem 1.2rem 1.6rem;
+            }
+            .missao-card .missao-titulo {
+                font-size: 1.2rem;
+                gap: 0.6rem;
+            }
+            .missao-card .missao-titulo .icon-gradient {
+                width: 38px;
+                height: 38px;
+                font-size: 1rem;
+            }
+            .missao-card .missao-desc {
+                font-size: 0.9rem;
+            }
+            .missao-card .missao-footer {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.6rem;
+            }
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 880px;
+            margin: 2rem auto 0;
+            padding: 0.5rem 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border);
+            transform: translateX(-50%);
+            border-radius: 4px;
+        }
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 2rem 2rem 0;
+            position: relative;
+            width: 50%;
+            opacity: 0;
+            transform: translateX(-16px);
+            transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .timeline-item:nth-child(odd) {
+            justify-content: flex-start;
+            padding: 0 0 2rem 2rem;
+            margin-left: 50%;
+            transform: translateX(16px);
+        }
+        .timeline-item:nth-child(odd).visible {
+            transform: translateX(0);
+        }
+        .timeline-marker {
+            position: absolute;
+            top: 50%;
+            width: 14px;
+            height: 14px;
+            background: var(--white);
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px var(--white);
+            z-index: 2;
+            transform: translateY(-50%);
+            transition: var(--transition);
+        }
+        .timeline-item:nth-child(even) .timeline-marker {
+            right: -7px;
+            transform: translate(50%, -50%);
+        }
+        .timeline-item:nth-child(odd) .timeline-marker {
+            left: -7px;
+            transform: translate(-50%, -50%);
+        }
+        .timeline-item:hover .timeline-marker {
+            background: var(--accent);
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+        .timeline-item:nth-child(even):hover .timeline-marker {
+            transform: translate(50%, -50%) scale(1.2);
+        }
+        .timeline-content {
+            background: var(--white);
+            padding: 1rem 1.4rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            max-width: 320px;
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+        .timeline-content:hover {
+            border-color: var(--accent);
+            transform: translateY(-3px);
+        }
+        .timeline-icon-wrapper {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background: var(--accent-light);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: var(--accent);
+            transition: var(--transition);
+        }
+        .timeline-content:hover .timeline-icon-wrapper {
+            background: var(--accent);
+            color: var(--white);
+        }
+        .timeline-text h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.1rem;
+        }
+        .timeline-text p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .faq-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        .faq-item {
+            background: var(--bg);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            overflow: hidden;
+        }
+        .faq-item:hover {
+            border-color: var(--accent);
+        }
+        .faq-question {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--primary);
+            transition: var(--transition);
+            gap: 1rem;
+        }
+        .faq-question i {
+            font-size: 1.2rem;
+            color: var(--accent);
+            transition: var(--transition);
+            flex-shrink: 0;
+        }
+        .faq-question .fa-chevron-down {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            transition: transform 0.3s ease;
+        }
+        .faq-item.active .faq-question .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+        .faq-item.active .faq-question i:first-child {
+            color: var(--accent-dark);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s cubic-bezier(0.22, 1, 0.36, 1), padding 0.3s ease;
+            padding: 0 1.2rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 0.6rem 1.2rem 1.2rem;
+        }
+        .faq-answer p {
+            margin: 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 2.8rem;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+        .contact-block .contact-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .contact-block .contact-row:last-child {
+            border-bottom: none;
+        }
+        .contact-block .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--bg);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: var(--text-secondary);
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+        .contact-block .contact-row:hover .contact-icon {
+            background: var(--accent-light);
+            color: var(--accent);
+        }
+        .contact-block .contact-info {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+        }
+        .contact-block .contact-label {
+            font-weight: 600;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--text-secondary);
+            opacity: 0.6;
+        }
+        .contact-block .contact-value {
+            font-weight: 500;
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+        .contact-block .contact-value .endereco-quebra {
+            display: block;
+        }
+        .contact-block .contact-value .endereco-cidade {
+            display: block;
+            margin-top: 0.1rem;
+        }
+        .map-wrapper {
+            margin-top: 1.2rem;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+        .map-wrapper:hover {
+            border-color: var(--accent);
+        }
+        .map-wrapper iframe {
+            width: 100%;
+            height: 180px;
+            border: none;
+            display: block;
+        }
+
+        .contact-cta {
+            grid-column: 1 / -1;
+            background: var(--primary);
+            border-radius: var(--radius-sm);
+            padding: 1.6rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+        }
+        .contact-cta .cta-text h4 {
+            color: var(--white);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.1rem;
+        }
+        .contact-cta .cta-text p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .footer-modern {
+            background: var(--primary);
+            color: rgba(255, 255, 255, 0.4);
+            padding: 2.5rem 2rem 1.8rem;
+            margin-top: 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .footer-modern .footer-brand img {
+            height: 40px;
+            width: auto;
+            filter: brightness(0) invert(1);
+        }
+        .footer-modern .footer-social {
+            display: flex;
+            gap: 1.2rem;
+            justify-content: center;
+            margin: 0.8rem 0;
+        }
+        .footer-modern .footer-social a {
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+        .footer-modern .footer-social a:hover {
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+        .footer-modern .footer-copy {
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+        .footer-modern .footer-copy strong {
+            color: var(--white);
+            opacity: 0.7;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #25d366;
+            color: var(--white);
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.15);
+            transition: var(--transition);
+            z-index: 999;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.06);
+            box-shadow: 0 6px 28px rgba(37, 211, 102, 0.25);
+        }
+
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 26, 46, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            padding: 1.5rem;
+            animation: fadeInPopup 0.5s ease;
+        }
+
+        .popup-overlay.active {
+            display: flex;
+        }
+
+        .popup-content {
+            background: linear-gradient(145deg, #ffffff, #f7faff);
+            max-width: 420px;
+            width: 100%;
+            border-radius: 32px;
+            padding: 2.8rem 2rem 2rem;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.15), 0 10px 30px rgba(37, 99, 235, 0.06);
+            animation: scaleIn 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            overflow: hidden;
+        }
+
+        .popup-content::before {
+            content: '';
+            position: absolute;
+            top: -80px;
+            right: -80px;
+            width: 220px;
+            height: 220px;
+            background: radial-gradient(circle, rgba(37, 211, 102, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .popup-content::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -100px;
+            width: 260px;
+            height: 260px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 14px;
+            right: 18px;
+            background: rgba(0, 0, 0, 0.04);
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .popup-close.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .popup-close:hover {
+            background: rgba(0, 0, 0, 0.08);
+            color: var(--primary);
+            transform: rotate(90deg);
+        }
+
+        .popup-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.8rem;
+            background: transparent;
+        }
+
+        .popup-icon img {
+            width: 80px;
+            height: auto;
+            display: block;
+            filter: drop-shadow(0 4px 12px rgba(37, 99, 235, 0.15));
+        }
+
+        .popup-content h3 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+            letter-spacing: -0.02em;
+            position: relative;
+            z-index: 2;
+        }
+
+        .popup-content h3 .highlight {
+            background: linear-gradient(135deg, #25d366, #0f9a4a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .popup-content .sub-text {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1.6rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .popup-content .sub-text strong {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .popup-content .features {
+            display: flex;
+            justify-content: center;
+            gap: 0.8rem;
+            margin-bottom: 1.8rem;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
+        }
+
+        .popup-content .features .feat {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            background: var(--bg);
+            padding: 0.4rem 1rem;
+            border-radius: 40px;
+            border: 1px solid var(--border);
+        }
+
+        .popup-content .features .feat i {
+            color: #25d366;
+            font-size: 0.7rem;
+        }
+
+        .popup-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            background: linear-gradient(135deg, #25d366, #0f9a4a);
+            color: #fff;
+            padding: 1rem 2.8rem;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+            text-decoration: none;
+            width: 100%;
+            max-width: 280px;
+            box-shadow: 0 6px 24px rgba(37, 211, 102, 0.3);
+            position: relative;
+            z-index: 2;
+            letter-spacing: 0.02em;
+        }
+
+        .popup-btn:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.45);
+            background: linear-gradient(135deg, #1ebe5a, #0a7a3a);
+        }
+
+        .popup-btn i {
+            font-size: 1.4rem;
+        }
+
+        .popup-content .small-note {
+            font-size: 0.65rem;
+            color: var(--text-secondary);
+            opacity: 0.4;
+            margin-top: 0.8rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        @keyframes fadeInPopup {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0.92) translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .insta-card-minimal {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 2rem 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .insta-card-minimal:hover {
+            border-color: #e1306c;
+            box-shadow: 0 8px 30px rgba(225, 48, 108, 0.08);
+            transform: translateY(-3px);
+        }
+        .insta-left {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+        .insta-left .insta-icon-bg {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            color: white;
+            flex-shrink: 0;
+        }
+        .insta-left .insta-texto h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 0;
+            line-height: 1.2;
+        }
+        .insta-left .insta-texto p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin: 0;
+            opacity: 0.8;
+        }
+        .insta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: transparent;
+            color: var(--primary);
+            font-weight: 600;
+            padding: 0.5rem 1.8rem;
+            border-radius: 60px;
+            border: 1px solid var(--border);
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+        .insta-btn:hover {
+            background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: white;
+            border-color: transparent;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(225, 48, 108, 0.2);
+        }
+        .insta-btn i {
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 600px) {
+            .insta-card-minimal {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1.5rem;
+            }
+            .insta-left {
+                width: 100%;
+            }
+            .insta-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .service-grid {
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            }
+            .prev-grid {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            }
+            .section-header {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 0.6rem 1.2rem;
+            }
+            nav {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .mobile-menu {
+                display: none;
+            }
+            .mobile-menu.open {
+                display: flex;
+            }
+
+            .hero {
+                min-height: 70vh;
+                padding: 5rem 1.5rem 3rem;
+            }
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+            .prev-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+            .timeline-item,
+            .timeline-item:nth-child(odd) {
+                width: 100%;
+                padding: 0 0 1.6rem 3rem;
+                margin-left: 0;
+                justify-content: flex-start;
+                transform: translateX(0);
+            }
+            .timeline-item .timeline-marker,
+            .timeline-item:nth-child(even) .timeline-marker,
+            .timeline-item:nth-child(odd) .timeline-marker {
+                left: 20px;
+                right: auto;
+                transform: translate(-50%, -50%);
+            }
+            .timeline-item:hover .timeline-marker {
+                transform: translate(-50%, -50%) scale(1.2);
+            }
+            .timeline-content {
+                max-width: 100%;
+                padding: 0.8rem 1.2rem;
+                gap: 0.8rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                padding: 1.8rem;
+                gap: 1.5rem;
+            }
+            .contact-cta {
+                flex-direction: column;
+                text-align: center;
+                padding: 1.5rem;
+            }
+            .contact-block .contact-row {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+            .map-wrapper iframe {
+                height: 160px;
+            }
+
+            .section-header {
+                flex-direction: column;
+                text-align: center;
+                padding: 0.2rem 0;
+            }
+            .section-header .header-icon {
+                width: 56px;
+                height: 56px;
+                font-size: 1.4rem;
+            }
+            .section-header .header-text h2 {
+                font-size: 1.8rem;
+            }
+
+            .popup-content {
+                padding: 2rem 1.2rem;
+                max-width: 100%;
+                border-radius: 24px;
+            }
+            .popup-content h3 {
+                font-size: 1.5rem;
+            }
+            .popup-icon img {
+                width: 70px;
+            }
+            .popup-content .features {
+                gap: 0.5rem;
+            }
+            .popup-content .features .feat {
+                font-size: 0.65rem;
+                padding: 0.2rem 0.8rem;
+            }
+            .popup-btn {
+                font-size: 1rem;
+                padding: 0.8rem 1.8rem;
+                max-width: 100%;
+            }
+
+            .insta-card-minimal {
+                padding: 1.2rem 1.5rem;
+            }
+            .insta-left .insta-icon-bg {
+                width: 44px;
+                height: 44px;
+                font-size: 1.3rem;
+            }
+            .insta-left .insta-texto h4 {
+                font-size: 1rem;
+            }
+            .insta-btn {
+                font-size: 0.85rem;
+                padding: 0.4rem 1.4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 0.9rem;
+            }
+            .whatsapp-float {
+                width: 52px;
+                height: 52px;
+                font-size: 1.8rem;
+                bottom: 1.2rem;
+                right: 1.2rem;
+            }
+            .logo img {
+                height: 32px;
+            }
+            .footer-modern .footer-brand img {
+                height: 32px;
+            }
+            .popup-content {
+                padding: 1.6rem 1rem;
+            }
+            .section-title {
+                font-size: 1.6rem;
+            }
+            .map-wrapper iframe {
+                height: 140px;
+            }
+            .btn-primary,
+            .btn-secondary {
+                font-size: 0.9rem;
+                padding: 0.6rem 1.6rem;
+            }
+            .insta-card-minimal {
+                padding: 1rem 1.2rem;
+            }
+            .insta-left {
+                gap: 0.8rem;
+            }
+            .insta-left .insta-icon-bg {
+                width: 38px;
+                height: 38px;
+                font-size: 1.1rem;
+            }
+            .insta-left .insta-texto h4 {
+                font-size: 0.9rem;
+            }
+            .insta-left .insta-texto p {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <a href="#inicio" class="logo">
+            <img src="logo.png" alt="Calculoro" />
+        </a>
+        <nav id="desktop-nav">
+            <a href="#servicos">Serviços</a>
+            <a href="#atuacao">Áreas</a>
+            <a href="#fases">Fases</a>
+            <a href="#sobre">Sobre</a>
+            <a href="https://wa.me/5511952689015?text=Olá!%20Gostaria%20de%20solicitar%20um%20cálculo%20judicial." target="_blank" class="btn-nav"><i class="fab fa-whatsapp"></i> Solicitar Cálculo</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#servicos" class="mobile-link">Serviços</a>
+        <a href="#atuacao" class="mobile-link">Áreas</a>
+        <a href="#fases" class="mobile-link">Fases</a>
+        <a href="#sobre" class="mobile-link">Sobre</a>
+        <a href="https://wa.me/5511952689015?text=Olá!%20Gostaria%20de%20solicitar%20um%20cálculo%20judicial." target="_blank" class="btn-nav-mobile mobile-link"><i class="fab fa-whatsapp"></i> Solicitar Cálculo</a>
+    </div>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content fade-in">
+            <span class="tag"><i class="fas fa-gavel"></i> Assessoria contábil especializada em cálculos judiciais</span>
+            <h1>Soluções contábeis <span>com precisão</span> e agilidade</h1>
+            <p>
+                Somos especialistas na elaboração de cálculos contábeis para ações trabalhistas, cíveis, bancárias e demais demandas judiciais. Atuamos com precisão e agilidade, utilizando o software <strong>PJE-CALC Cidadão</strong>, referência no meio jurídico.
+            </p>
+            <div class="hero-buttons">
+                <a href="#servicos" class="btn-primary"><i class="fas fa-arrow-right"></i> Nossos serviços</a>
+                <a href="https://wa.me/5511952689015?text=Olá!%20Gostaria%20de%20solicitar%20um%20cálculo%20judicial." target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i> Solicitar Cálculo</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="stats-section" class="container" style="margin-top: -1.5rem; position: relative; z-index: 3;">
+        <div class="stats-grid fade-in">
+            <div class="stat-item arara-card">
+                <img src="pa.png" alt="Mascote Calculoro - Arara" class="arara-img" />
+                <p>Atuamos em todo o Brasil</p>
+                <div class="sub-destaque">Presença nacional com excelência</div>
+            </div>
+
+            <div class="stat-item">
+                <i class="fas fa-calculator stat-icon"></i>
+                <div class="stat-figure" data-target="20000">0</div>
+                <p>Cálculos elaborados com precisão e conformidade legal</p>
+            </div>
+
+            <div class="stat-item">
+                <i class="fas fa-clock stat-icon"></i>
+                <div class="stat-figure" data-target="24">0</div>
+                <p>Entregamos em até 24h!</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="servicos" class="has-aviso">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="header-icon"><i class="fas fa-briefcase"></i></div>
+                <div class="header-text">
+                    <span class="tag">Trabalhista e Judicial</span>
+                    <h2>Cálculos Trabalhistas</h2>
+                    <p>Soluções contábeis para cada fase da relação trabalhista, dentro e fora do judiciário.</p>
+                </div>
+            </div>
+            <div class="service-grid">
+                <div class="service-card fade-in">
+                    <div class="icon-wrap"><i class="fas fa-chart-line"></i></div>
+                    <h3>Provisão Interna</h3>
+                    <p>Analisamos pendências trabalhistas, revisamos alterações processuais e elaboramos cálculos para acordos extrajudiciais.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon-wrap"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Cálculos de Execução</h3>
+                    <p>Impugnação de cálculos, embargos, agravos, contraminutas e atualização monetária para pagamento.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon-wrap"><i class="fas fa-file-contract"></i></div>
+                    <h3>Impugnação de Cálculo</h3>
+                    <p>Parecer técnico fundamentado para contestar cálculos da parte adversária, com equipe multidisciplinar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="atuacao" style="background: linear-gradient(180deg, #f1f5f9 0%, #e8edf5 100%);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="header-icon"><i class="fas fa-layer-group"></i></div>
+                <div class="header-text">
+                    <h2>Soluções Contábeis para o Judiciário</h2>
+                    <p>Atendemos diversas áreas do direito com cálculos precisos e fundamentados.</p>
+                </div>
+            </div>
+
+            <div class="prev-grid fade-in">
+                <div class="prev-card">
+                    <div class="icon-circle"><i class="fas fa-gavel"></i></div>
+                    <div class="prev-text">
+                        <h4>Cálculos Cíveis</h4>
+                        <p>Elaboração de cálculos em ações cíveis, incluindo indenizações, honorários, danos materiais e morais.</p>
+                        <span class="badge-icon">Cível</span>
+                    </div>
+                </div>
+                <div class="prev-card">
+                    <div class="icon-circle"><i class="fas fa-percent"></i></div>
+                    <div class="prev-text">
+                        <h4>Revisão de Juros Abusivos</h4>
+                        <p>Apuração de juros acima da média de mercado em contratos bancários e financeiros.</p>
+                        <span class="badge-icon">Bancário</span>
+                    </div>
+                </div>
+                <div class="prev-card">
+                    <div class="icon-circle"><i class="fas fa-chart-pie"></i></div>
+                    <div class="prev-text">
+                        <h4>Análise Contábil e Parecer</h4>
+                        <p>Parecer técnico contábil detalhado para subsidiar decisões judiciais, com análise crítica de documentos.</p>
+                        <span class="badge-icon">Perícia</span>
+                    </div>
+                </div>
+                <div class="prev-card">
+                    <div class="icon-circle"><i class="fas fa-comment-dots"></i></div>
+                    <div class="prev-text">
+                        <h4>Manifestação às Impugnações</h4>
+                        <p>Resposta técnica a impugnações de cálculos apresentadas pela parte contrária.</p>
+                        <span class="badge-icon">Contestação</span>
+                    </div>
+                </div>
+                <div class="prev-card">
+                    <div class="icon-circle"><i class="fas fa-clipboard-list"></i></div>
+                    <div class="prev-text">
+                        <h4>Apresentação de Quesitos</h4>
+                        <p>Elaboração de quesitos técnicos para perícias contábeis, visando esclarecer pontos relevantes.</p>
+                        <span class="badge-icon">Perícia</span>
+                    </div>
+                </div>
+                <div class="prev-card">
+                    <div class="icon-circle"><i class="fas fa-cogs"></i></div>
+                    <div class="prev-text">
+                        <h4>Assessoria em Execução</h4>
+                        <p>Acompanhamento da fase de execução, com atualização de valores e suporte em todas as etapas.</p>
+                        <span class="badge-icon">Execução</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="missao-card fade-in" style="margin-top: 2.5rem;">
+                <div class="about-inner right">
+                    <div class="about-image">
+                        <img src="office.jpeg" alt="Equipe Calculoro" />
+                    </div>
+                    <div class="about-text">
+                        <div class="missao-titulo">
+                            <span class="icon-gradient"><i class="fas fa-bullseye"></i></span>
+                            Nossa Missão
+                        </div>
+                       
+                        <p class="missao-desc" style="margin-top: 0.2rem;">
+                            <strong>Nosso compromisso</strong> é entregar trabalhos técnicos de excelência, prontos para subsidiar decisões judiciais e extrajudiciais com segurança e fundamentação.
+                        </p>
+                        <p class="missao-desc">
+                            Nossa equipe multidisciplinar atua em diversas frentes do direito e da contabilidade judicial, oferecendo cálculos precisos e pareceres técnicos com alto rigor contábil e jurídico. Atendemos advogados, empresas e escritórios de advocacia, com soluções personalizadas para cada demanda.
+                        </p>
+                        
+                        <div class="missao-footer">
+                            <span class="missao-selo">
+                                <i class="fas fa-calendar-alt"></i> Desde 2022 – mais de 5 anos no mercado!
+                            </span>
+                            <span style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--text-secondary); opacity: 0.6;">
+                                <i class="fas fa-check-circle" style="color: var(--accent);"></i> Confiança e excelência
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fases" class="has-aviso">
+        <div class="container">
+            <div class="fade-in" style="text-align:center;">
+                <span class="tag">Processo</span>
+                <h2 class="section-title">Atuação em Diversas Fases</h2>
+                <p class="section-sub">Acompanhamos toda a execução, da liquidação inicial até a apuração final.</p>
+            </div>
+
+            <div class="timeline" id="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon-wrapper"><i class="fas fa-balance-scale"></i></div>
+                        <div class="timeline-text">
+                            <h3>Liquidação de Sentença</h3>
+                            <p>Apuração dos valores devidos com base na decisão judicial.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon-wrapper"><i class="fas fa-gavel"></i></div>
+                        <div class="timeline-text">
+                            <h3>Liquidação de Decisões</h3>
+                            <p>Atualização e detalhamento conforme novos recursos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon-wrapper"><i class="fas fa-file-invoice"></i></div>
+                        <div class="timeline-text">
+                            <h3>Apresentação de Cálculos</h3>
+                            <p>Elaboração e entrega da planilha de liquidação.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon-wrapper"><i class="fas fa-comment-dots"></i></div>
+                        <div class="timeline-text">
+                            <h3>Manifestação sobre Laudo</h3>
+                            <p>Análise técnica e impugnação de laudos contábeis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon-wrapper"><i class="fas fa-coins"></i></div>
+                        <div class="timeline-text">
+                            <h3>Atualização Monetária</h3>
+                            <p>Aplicação de juros e correção até o pagamento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon-wrapper"><i class="fas fa-calculator"></i></div>
+                        <div class="timeline-text">
+                            <h3>Apuração de Remanescente</h3>
+                            <p>Cálculo final do saldo após pagamentos parciais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" style="background: var(--bg);">
+        <div class="container">
+            <div class="missao-card fade-in">
+                <div class="about-inner">
+                    <div class="about-image">
+                        <img src="adv.png" alt="Equipe Calculoro" />
+                    </div>
+                    <div class="about-text">
+                        <div class="missao-titulo">
+                            <span class="icon-gradient"><i class="fas fa-building"></i></span>
+                            Sobre Nós
+                        </div>
+                        <p class="missao-desc">
+                            Nossa equipe é formada por advogados calculistas especializados na área trabalhista, com formação complementar em perícia contábil e domínio do sistema PJe-Calc. Atuamos há mais de 5 anos de forma contínua, com milhares de cálculos trabalhistas e judiciais elaborados, muitos homologados judicialmente, e com histórico de sucesso em impugnações de laudos contábeis.
+                        </p>
+                        <p class="missao-desc" style="margin-top: 0.2rem;">
+                            Unimos o conhecimento jurídico à precisão técnica contábil. Nosso diferencial é a comunicação transparente com o cliente e a análise personalizada de cada caso.
+                        </p>
+                        <div class="missao-footer">
+                            <span class="missao-selo secundario">
+                                <i class="fas fa-shield-alt"></i> Confiança e excelência
+                            </span>
+                            <span style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--text-secondary); opacity: 0.6;">
+                                <i class="fas fa-check-circle" style="color: var(--secondary);"></i> +5 anos de experiência
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 2rem 0 1rem 0;">
+        <div class="container">
+            <div class="insta-card-minimal fade-in">
+                <div class="insta-left">
+                    <div class="insta-icon-bg">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="insta-texto">
+                        <h4>Siga-nos: @calculoro</h4>
+                        <p>Conteúdo Exclusivo Sobre Cálculos Judiciais e Muito Mais!</p>
+                    </div>
+                </div>
+                <a href="https://www.instagram.com/calculoro" target="_blank" class="insta-btn">
+                    <i class="fab fa-instagram"></i> Seguir
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="has-aviso">
+        <div class="container">
+            <div class="fade-in" style="text-align:center;">
+                <span class="tag">Atendimento</span>
+                <h2 class="section-title">Fale Conosco</h2>
+                <p class="section-sub">Atendimento ágil via WhatsApp e presencial de segunda a sexta, das 8h às 18h.</p>
+            </div>
+
+            <div class="contact-grid fade-in">
+                <div>
+                    <h4 style="font-size:1.1rem; font-weight:700; color:var(--primary); margin-bottom:1.2rem; display:flex; align-items:center; gap:0.6rem;">
+                        <i class="fas fa-question-circle" style="color:var(--accent);"></i> Perguntas frequentes
+                    </h4>
+                    <div class="faq-accordion">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span><i class="fas fa-credit-card"></i> Formas de pagamentos?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Processos individuais o pagamento será através de transferência bancária, cartão de crédito/débito ou PIX no ato da contração. Podendo, ser 50% ato e 50% na entrega dos trabalhos. Para contratos mensais, o pagamento será estabelecido no contrato.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span><i class="fas fa-clock"></i> Qual o prazo de entrega dos cálculos?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>A partir de 24 horas. Respeitando sempre um dia antes do prazo fatal!</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span><i class="fas fa-file-pdf"></i> Como funciona o envio dos cálculos?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Os cálculos serão enviados por e-mail em arquivo .PDF e .PJC. Auxiliamos o advogado na juntada dos cálculos no processo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 style="font-size:1.1rem; font-weight:700; color:var(--primary); margin-bottom:1.2rem; display:flex; align-items:center; gap:0.6rem;">
+                        <i class="fas fa-address-card" style="color:var(--accent);"></i> Informações
+                    </h4>
+                    <div class="contact-block">
+                        <div class="contact-row">
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">WhatsApp</span>
+                                <span class="contact-value">
+                                    (11) 95268-9015 (Novo)<br>
+                                    (11) 9 4854-9388
+                                </span>
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">E-mail</span>
+                                <span class="contact-value">contato@calculoro.com.br</span>
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-icon"><i class="far fa-clock"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">Horário</span>
+                                <span class="contact-value">Seg–Sex, 8h–18h</span>
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-icon"><i class="fas fa-map-pin"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">Endereço</span>
+                                <span class="contact-value">
+                                    <span class="endereco-quebra">Av. Marechal Deodoro, 405</span>
+                                    <span class="endereco-cidade">– Itatiba, SP</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-wrapper">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.851555379981!2d-46.84251258440728!3d-23.10611448492435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf1c7b4b6c0b7f%3A0x1b7b0b0b0b0b0b0b!2sAv.%20Marechal%20Deodoro%2C%20405%20-%20Itatiba%2C%20SP%2C%2013250-000!5e0!3m2!1spt-BR!2sbr!4v1610000000000!5m2!1spt-BR!2sbr"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="contact-cta">
+                <div class="cta-text">
+                    <h4>Solicite seu cálculo agora</h4>
+                    <p>Ficou com alguma dúvida? Estamos prontos para ajudar!</p>
+                </div>
+                <a href="https://wa.me/5511952689015?text=Olá!%20Gostaria%20de%20solicitar%20um%20cálculo%20judicial." target="_blank" class="btn-primary">
+                    <i class="fab fa-whatsapp"></i> SOLICITAR CÁLCULO
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-modern">
+    <div class="footer-brand">
+        <img src="logo.png" alt="Calculoro" />
+    </div>
+    <p style="font-size:0.9rem; opacity:0.5;">Soluções Contábeis para o Judiciário</p>
+    <div class="footer-social">
+        <a href="https://www.instagram.com/calculoro" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="footer-copy">
+        &copy; 2026 · <strong>Calculoro</strong> · Todos os direitos reservados
+    </div>
+</footer>
+
+<a href="https://wa.me/5511952689015?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20Calculoro." target="_blank" class="whatsapp-float" aria-label="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<div id="popup-whatsapp" class="popup-overlay">
+    <div class="popup-content">
+        <button class="popup-close" id="popup-close" aria-label="Fechar popup">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="popup-icon">
+            <img src="pa.png" alt="Mascote Calculoro" />
+        </div>
+        <h3>Posso te ajudar?<span class="highlight"> </span></h3>
+        <p class="sub-text">
+            Converse com a nossa equipe: Cálculos Trabalhistas, Cíveis, Bancários, Revisão de Juros, Impugnação e Muito Mais!<br>
+            <strong>Atendimento humanizado e ágil</strong>
+        </p>
+        <div class="features">
+            <span class="feat"><i class="fas fa-check-circle"></i> Equipe Calculista</span>
+            <span class="feat"><i class="fas fa-clock"></i> Resposta rápida</span>
+        </div>
+        <a href="https://wa.me/5511952689015?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20Calculoro." target="_blank" class="popup-btn">
+            <i class="fab fa-whatsapp"></i> Iniciar conversa
+        </a>
+        <p class="small-note">Clique no botão e fale diretamente no WhatsApp</p>
+    </div>
+</div>
+
+<script>
+    (function() {
+        document.addEventListener('keydown', function(e) {
+            const ctrl = e.ctrlKey || e.metaKey;
+            const shift = e.shiftKey;
+            const key = e.key.toLowerCase();
+
+            if (key === 'f12' || (ctrl && shift && (key === 'i' || key === 'j' || key === 'c')) ||
+                (ctrl && key === 'u') || (ctrl && shift && key === 'u') ||
+                (ctrl && key === 's') || (ctrl && key === 'p') || (ctrl && shift && key === 'p') ||
+                (ctrl && shift && key === 'e') || (ctrl && shift && key === 'k') || (ctrl && shift && key === 'o') ||
+                (e.key === 'F10' && e.shiftKey)) {
+                e.preventDefault();
+                return false;
+            }
+            return true;
+        });
+
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.addEventListener('dragstart', e => e.preventDefault());
+        document.addEventListener('selectstart', e => e.preventDefault());
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            function toggleMenu() {
+                hamburger.classList.toggle('active');
+                mobileMenu.classList.toggle('open');
+                document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+            }
+
+            hamburger.addEventListener('click', toggleMenu);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (mobileMenu.classList.contains('open')) toggleMenu();
+                });
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && mobileMenu.classList.contains('open')) toggleMenu();
+            });
+
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', function() {
+                header.classList.toggle('scrolled', window.scrollY > 50);
+            });
+
+            const fadeElements = document.querySelectorAll('.fade-in');
+            const fadeObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('visible');
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+            fadeElements.forEach(el => fadeObserver.observe(el));
+
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const timelineObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const index = Array.from(timelineItems).indexOf(entry.target);
+                        setTimeout(() => entry.target.classList.add('visible'), index * 120);
+                    }
+                });
+            }, { threshold: 0.2, rootMargin: '0px 0px -50px 0px' });
+            timelineItems.forEach(item => timelineObserver.observe(item));
+
+            document.querySelectorAll('a[href^="#"]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const targetEl = document.querySelector(targetId);
+                    if (targetEl) {
+                        e.preventDefault();
+                        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            const popup = document.getElementById('popup-whatsapp');
+            const closeBtn = document.getElementById('popup-close');
+            let popupTimer = null;
+
+            function showPopup() {
+                if (popup.classList.contains('active')) return;
+                popup.classList.add('active');
+                setTimeout(() => {
+                    closeBtn.classList.add('visible');
+                }, 3000);
+            }
+
+            function schedulePopup(delay) {
+                if (popupTimer) clearTimeout(popupTimer);
+                popupTimer = setTimeout(() => {
+                    showPopup();
+                }, delay);
+            }
+
+            closeBtn.addEventListener('click', function() {
+                popup.classList.remove('active');
+                closeBtn.classList.remove('visible');
+                schedulePopup(30000);
+            });
+
+            setTimeout(() => {
+                showPopup();
+            }, 18000);
+
+            document.documentElement.addEventListener('mouseleave', function(e) {
+                if (e.clientY < 0 && !popup.classList.contains('active')) {
+                    showPopup();
+                }
+            });
+
+            const statItems = document.querySelectorAll('.stat-item .stat-figure[data-target]');
+            let animationStarted = false;
+
+            function animateNumbers() {
+                if (animationStarted) return;
+                animationStarted = true;
+
+                statItems.forEach(item => {
+                    const target = parseInt(item.getAttribute('data-target'), 10);
+                    if (target === 0) return;
+                    const duration = 2000;
+                    const startTime = performance.now();
+
+                    function updateCounter(currentTime) {
+                        const elapsed = currentTime - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const easeProgress = 1 - Math.pow(1 - progress, 3);
+                        const currentValue = Math.floor(easeProgress * target);
+
+                        if (target === 24) {
+                            item.textContent = currentValue + 'h';
+                        } else {
+                            item.textContent = currentValue.toLocaleString('pt-BR');
+                        }
+
+                        if (progress < 1) {
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            if (target === 24) {
+                                item.textContent = '24h';
+                            } else {
+                                item.textContent = target.toLocaleString('pt-BR') + '+';
+                            }
+                        }
+                    }
+                    requestAnimationFrame(updateCounter);
+                });
+            }
+
+            const statsSection = document.getElementById('stats-section');
+            if (statsSection) {
+                const statsObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting && !animationStarted) {
+                            animateNumbers();
+                        }
+                    });
+                }, { threshold: 0.25 });
+                statsObserver.observe(statsSection);
+
+                const rect = statsSection.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.7 && !animationStarted) {
+                    animateNumbers();
+                }
+            }
+
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', function() {
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    })();
+</script>
+
+</body>
+</html>
